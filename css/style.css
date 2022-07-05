@@ -1,0 +1,126 @@
+html{
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	height: 100%;
+
+	perspective: 1px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	transform-style: preserve-3d;
+	
+}
+body p{
+	font-family: arial;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.section1{
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 10vh 10vh;
+	position: relative;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	transform-style: inherit;
+}
+.section1 h1{
+	font-weight:bold;
+	color: white;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	font-size: 60px;
+	text-shadow: 0 0 3px #000000b8;
+}
+.section1:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background-image: url('../images/banner1.jpg');
+	background-size: cover;
+	z-index: -1;
+	min-height: 100vh; 
+	margin-bottom: 0;
+	transform: translateZ(-1px) scale(2);
+}
+
+.section2{
+	padding: 10vh;
+	background-color: white;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 2;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	padding-top: 0;
+}
+.section3{
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 10vh 10vh;
+	position: relative;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transform-style: inherit;
+}
+
+.section3 h1{
+	color: #fff;
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	font-size: 60px;
+	text-shadow: 0 0 3px #000000b8;
+}
+.section3:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background-image: url('../images/banner2.jpg');
+	background-size: cover;
+	z-index: -1;
+	min-height: 100vh; 
+
+	transform: translateZ(-1px) scale(2);
+}
+.section4{
+	padding: 10vh;
+	background-color:white;
+	position: relative;
+	z-index: 2;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
